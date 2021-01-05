@@ -2,7 +2,6 @@ package moneycalculator;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
-import java.awt.PopupMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
@@ -74,12 +73,11 @@ public class MainFrame extends JFrame {
 
     private ActionListener calculate() {
         return new ActionListener(){
-          @Override
-          public void actionPerformed(ActionEvent e){
-              commands.get("calculate").execute();
-          }
+            @Override
+            public void actionPerformed(ActionEvent e){
+                commands.get("calculate").execute();
+            }
         };
     }
     
 }
-
